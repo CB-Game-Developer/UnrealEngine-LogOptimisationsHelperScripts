@@ -1,0 +1,16 @@
+OPTIMISING SCRIPT by @CBgameDev 
+==================================================================================================== 
+    SCRIPT NAME: Log Textures That Are Equal To X Size 
+    DESCRIPTION: Searches the entire project for Textures which are equal to the size you have set. Use to help find textures which are larger than what you need them for 
+==================================================================================================== 
+ 
+        [128x128] TEX_T_Dust_Particle_D ------------> At Path: /Game/StarterContent/Textures/TEX_T_Dust_Particle_D.TEX_T_Dust_Particle_D 
+
+======================================================================================================= 
+    SUMMARY: 
+        -- Textures Of Size 128  -- 
+              Found: 1 
+ 
+======================================================================================================= 
+        Logged to D:/UE4/PythonEditorTools/Content/Python/Optimise//PythonOptimiseLog.txt 
+======================================================================================================= 

@@ -1,0 +1,1 @@
+Here is a video where I explain how to setup and use these optimising log python scripts to help you find things that you can optimise in your project: https://www.cbgamedev.com/resources
