@@ -1,1 +1,10 @@
-Here is a video where I explain how to setup and use these optimising log python scripts to help you find things that you can optimise in your project: https://www.cbgamedev.com/resources
+///////////////////////////////////////
+//UNREAL ENGINE PYTHON HELPER SCRIPTS//
+//by @cbGameDev ///////////////////////
+///////////////////////////////////////
+
+A set of Unreal Engine Python helper scripts for finding and logging potential problems and optimisations opportunities in your unreal projects. These scripts are available for free so anyone can use them.
+
+To see their purpose, how to set them up and for an overview of what each script does, see this video: 
+https://www.youtube.com/watch?v=9x_bm7PozMk
+
