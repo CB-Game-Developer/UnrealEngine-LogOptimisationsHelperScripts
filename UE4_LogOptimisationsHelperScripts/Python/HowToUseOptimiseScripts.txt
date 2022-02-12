@@ -3,8 +3,10 @@
 //by @cbGameDev ///////////////////////
 ///////////////////////////////////////
 
-A set of Unreal Engine Python helper scripts for finding and logging potential problems and optimisations opportunities in your unreal projects. These scripts are available for free so anyone can use them.
+A set of Unreal Engine Python helper scripts for finding and logging possible problems and potential optimisation opportunities in your Unreal projects. These scripts are available for free so anyone can use them.
 
 To see their purpose, how to set them up and for an overview of what each script does, see this video: 
 https://www.youtube.com/watch?v=9x_bm7PozMk
 
+
+Follow me on Twitter to see when I update the helper scripts: https://twitter.com/cbGameDev

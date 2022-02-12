@@ -1,8 +1,9 @@
-# ///////////////////////////////////////////////////////////////////
-# @CBgameDev Optimisation Script - Log Textures That Are Not Square
-# ///////////////////////////////////////////////////////////////////
+# ////////////////////////////////////////////////////////////////////////
+# @CBgameDev Optimisation Script - Log Textures That Are Not Power Of Two
+# ////////////////////////////////////////////////////////////////////////
 import unreal
 import os
+import math
 
 EditAssetLib = unreal.EditorAssetLibrary()
 workingPath = "/Game/"  # Using the root directory
@@ -11,6 +12,10 @@ allAssets = EditAssetLib.list_assets(workingPath, True, False)
 selectedAssetsPath = workingPath
 LogStringsArray = []
 numOfOptimisations = 0
+
+
+def is_power_of_2(n): 	# check if n is power of 2
+    return (math.log(n)/math.log(2)).is_integer()
 
 
 with unreal.ScopedSlowTask(len(allAssets), selectedAssetsPath) as ST:
@@ -28,10 +33,17 @@ with unreal.ScopedSlowTask(len(allAssets), selectedAssetsPath) as ST:
             _TextureXsize = _TextureAsset.blueprint_get_size_x()
             _TextureYsize = _TextureAsset.blueprint_get_size_y()
 
-            if not _TextureYsize == _TextureXsize:
+            if not is_power_of_2(_TextureYsize):
                 LogStringsArray.append("        [%s x %s] %s ------------> At Path: %s \n" % (_TextureXsize, _TextureYsize, _assetName, _assetPathName))
                 # unreal.log("Asset Name: %s Path: %s \n" % (_assetName, _assetPathName))
                 numOfOptimisations += 1
+                # print("Y is a power of 2")
+
+            elif not is_power_of_2(_TextureXsize):
+                LogStringsArray.append("        [%s x %s] %s ------------> At Path: %s \n" % (_TextureXsize, _TextureYsize, _assetName, _assetPathName))
+                # unreal.log("Asset Name: %s Path: %s \n" % (_assetName, _assetPathName))
+                numOfOptimisations += 1
+                print("X is a power of 2")
 
         if ST.should_cancel():
             break
@@ -40,9 +52,9 @@ with unreal.ScopedSlowTask(len(allAssets), selectedAssetsPath) as ST:
 
 # Write results into a log file
 # //////////////////////////////
-TitleOfOptimisation = "Log Textures That Are Not Square"
-DescOfOptimisation = "Searches the entire project for non square Textures e.g. 32x64, 1024x128. Instead of square e.g. 32x32, 128x128"
-SummaryMessageIntro = "-- Textures Which Are Not Square --"
+TitleOfOptimisation = "Log Textures That Are Not Power Of Two"
+DescOfOptimisation = "Searches the entire project for textures that are not a power of two e.g. 13x64, 100x96 etc. Instead of e.g. 32x32, 128x128 512x256"
+SummaryMessageIntro = "-- Textures Which Are Not A Power Of Two --"
 
 if unreal.Paths.file_exists(notepadFilePath):  # Check if txt file already exists
     os.remove(notepadFilePath)  # if does remove it
