@@ -9,4 +9,8 @@ To see their purpose, how to set them up and for an overview of what each script
 https://www.youtube.com/watch?v=9x_bm7PozMk
 
 
+Currently tested and working in engine versions: 4.25, 4.26, 4.27
+If using 4.25 run: EUW_OptimiseScripts_4_25
+If using 4.26, 4.27 run: EUW_OptimiseScripts_4_26
+
 Follow me on Twitter to see when I update the helper scripts: https://twitter.com/cbGameDev
