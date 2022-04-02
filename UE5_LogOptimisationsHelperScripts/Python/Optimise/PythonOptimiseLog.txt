@@ -1,0 +1,16 @@
+OPTIMISING SCRIPT by @CBgameDev 
+==================================================================================================== 
+    SCRIPT NAME: Log Foliage Asset With No Max Draw Distance Set 
+    DESCRIPTION: Searches the entire project for Foliage assets which have no max draw distance set 
+==================================================================================================== 
+ 
+        NewInstancedStaticMeshFoliage ------------> At Path: /Game/NewFolder/NewInstancedStaticMeshFoliage.NewInstancedStaticMeshFoliage 
+
+======================================================================================================= 
+    SUMMARY: 
+        -- Foliage Asset With No Max Draw Distance Set -- 
+              Found: 1 
+ 
+======================================================================================================= 
+        Logged to C:/Users/james/Documents/Unreal Projects/z_PythonToolUE5Test/Content/Python/Optimise//PythonOptimiseLog.txt 
+======================================================================================================= 
