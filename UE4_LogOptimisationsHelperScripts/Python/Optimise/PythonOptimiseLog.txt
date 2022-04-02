@@ -1,16 +1,20 @@
 OPTIMISING SCRIPT by @CBgameDev 
 ==================================================================================================== 
-    SCRIPT NAME: Log Textures That Are Equal To X Size 
-    DESCRIPTION: Searches the entire project for Textures which are equal to the size you have set. Use to help find textures which are larger than what you need them for 
+    SCRIPT NAME: Log Foliage Asset With No Max Draw Distance Set 
+    DESCRIPTION: Searches the entire project for Foliage assets which have no max draw distance set 
 ==================================================================================================== 
  
-        [128x128] TEX_T_Dust_Particle_D ------------> At Path: /Game/StarterContent/Textures/TEX_T_Dust_Particle_D.TEX_T_Dust_Particle_D 
+        FoliageStaticMesh ------------> At Path: /Game/FoliageTest/FoliageStaticMesh.FoliageStaticMesh 
+        FoliageStaticMesh1 ------------> At Path: /Game/FoliageTest/FoliageStaticMesh1.FoliageStaticMesh1 
+        FoliageStaticMesh2 ------------> At Path: /Game/FoliageTest/FoliageStaticMesh2.FoliageStaticMesh2 
+        FoliageTestActor ------------> At Path: /Game/Geometry/FoliageTestActor.FoliageTestActor 
+        NewInstancedStaticMeshFoliage ------------> At Path: /Game/NewInstancedStaticMeshFoliage.NewInstancedStaticMeshFoliage 
 
 ======================================================================================================= 
     SUMMARY: 
-        -- Textures Of Size 128  -- 
-              Found: 1 
+        -- Foliage Asset With No Max Draw Distance Set -- 
+              Found: 5 
  
 ======================================================================================================= 
-        Logged to D:/UE4/PythonEditorTools/Content/Python/Optimise//PythonOptimiseLog.txt 
+        Logged to D:/UE4/WIP_PythonScriptsV4/Content/Python/Optimise//PythonOptimiseLog.txt 
 ======================================================================================================= 
